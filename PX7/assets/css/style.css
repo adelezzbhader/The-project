@@ -111,11 +111,16 @@ body{
 }
 #true{
   background-color: #b3ff99;
+  text-align: center;
 }
 #false{
   background-color: #ff9999;
+  text-align: center;
 }
-
+#color{
+  background-color:#383838;
+  color: #fff;
+}
 
 
 

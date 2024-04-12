@@ -126,158 +126,220 @@
 
 
     <div class="modal-body">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12  fw-bold fs-3">Lectures</div>
+        <div class="container ">
+          <h2 class="text-center my-4">Lectures Attendance</h2>
+          <div class="table-responsive shadow">
+            <table class="table table-bordered">
+              <thead class="thead-light ">
+                <tr>
+                  <th rowspan="2" id="color"> Subject Name</th>
+                  <th colspan="8" id="color">Lectures</th>
+                  <th rowspan="2"  id="color">Total Presents</th>
+                  <th rowspan="2"  id="color">Total Absences</th>
+                </tr>
+                <tr>
+                  <th>1</th>
+                  <th>2</th>
+                  <th>3</th>
+                  <th>4</th>
+                  <th>5</th>
+                  <th>6</th>
+                  <th>7</th>
+                  <th>8</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Data Strusture</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="total-presents">6</td>
+                  <td class="total-absences">2</td>
+                </tr>
+                <tr>
+                  <td>Web programming</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="total-presents">5</td>
+                  <td class="total-absences">3</td>
+                </tr>
+                <tr>
+                  <td>CCNA</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="total-presents">4</td>
+                  <td class="total-absences">4</td>
+                </tr>
+                <tr>
+                  <td>Database</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="total-presents">4</td>
+                  <td class="total-absences">4</td>
+                </tr>
+                <tr>
+                  <td>java</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="present" id="true">P</td>
+                  <td class="total-presents">6</td>
+                  <td class="total-absences">2</td>
+                </tr>
+                <tr>
+                  <td>Capstone Design</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="present" id="true">P</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="absent" id="false">A</td>
+                  <td class="total-presents">4</td>
+                  <td class="total-absences">4</td>
+                </tr>
+                <!-- Add more rows for additional subjects -->
+              </tbody>
+            </table>
           </div>
         </div>
-        <table class="table table-striped table-hover text-center" id="table">
-          <thead class="table-secondary">
-            <tr>
-              <th scope="col">Subject</th>
-              <th scope="col">lec-1</th>
-              <th scope="col">lec-2</th>
-              <th scope="col">lec-3</th>
-              <th scope="col">lec-4</th>
-              <th scope="col">lec-5</th>
-              <th scope="col">lec-6</th>
-              <th scope="col">lec-7</th>
-              <th scope="col">lec-8</th>
-              <th scope="col">lec-9</th>
-              <th scope="col">sum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th  scope="row">c++</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">3/9</th>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">7</th>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">7</th>
-            </tr>
-            <tr>
-              <th scope="row">c++</th>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">3</th>
-            </tr>
-          </tbody>
-        </table>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-12  fw-bold fs-3">Sections</div>
+        <div class="modal-body">
+          <div class="container">
+            <h2 class="text-center my-4">Section Attendance</h2>
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead class="thead-light ">
+                  <tr>
+                    <th rowspan="2" id="color"> Subject Name</th>
+                    <th colspan="8" id="color">Lectures</th>
+                    <th rowspan="2"  id="color">Total Presents</th>
+                    <th rowspan="2"  id="color">Total Absences</th>
+                  </tr>
+                  <tr>
+                    <th>1</th>
+                    <th>2</th>
+                    <th>3</th>
+                    <th>4</th>
+                    <th>5</th>
+                    <th>6</th>
+                    <th>7</th>
+                    <th>8</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Data Strusture</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="total-presents">6</td>
+                    <td class="total-absences">2</td>
+                  </tr>
+                  <tr>
+                    <td>Web programming</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="total-presents">5</td>
+                    <td class="total-absences">3</td>
+                  </tr>
+                  <tr>
+                    <td>CCNA</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="total-presents">4</td>
+                    <td class="total-absences">4</td>
+                  </tr>
+                  <tr>
+                    <td>Database</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="total-presents">4</td>
+                    <td class="total-absences">4</td>
+                  </tr>
+                  <tr>
+                    <td>java</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="present" id="true">P</td>
+                    <td class="total-presents">6</td>
+                    <td class="total-absences">2</td>
+                  </tr>
+                  <tr>
+                    <td>Capstone Design</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="present" id="true">P</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="absent" id="false">A</td>
+                    <td class="total-presents">4</td>
+                    <td class="total-absences">4</td>
+                  </tr>
+                  <!-- Add more rows for additional subjects -->
+                </tbody>
+              </table>
+              </div>
           </div>
-        </div>
-        <table class="table table-striped table-hover text-center" id="table">
-          <thead class="table-secondary">
-            <tr>
-              <th scope="col">Subject</th>
-              <th scope="col">lec-1</th>
-              <th scope="col">lec-2</th>
-              <th scope="col">lec-3</th>
-              <th scope="col">lec-4</th>
-              <th scope="col">lec-5</th>
-              <th scope="col">lec-6</th>
-              <th scope="col">lec-7</th>
-              <th scope="col">lec-8</th>
-              <th scope="col">lec-9</th>
-              <th scope="col">sum</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">c++</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">3</th>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">7</th>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">7</th>
-            </tr>
-            <tr>
-              <th scope="row">c++</th>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="false"><i class="bi bi-x"></i></td>
-              <td id="true"><i class="bi bi-check2"></i></td>
-              <th scope="row">3</th>
-            </tr>
-          </tbody>
-        </table>
+          
       </div>
 
 </div>
@@ -288,5 +350,6 @@
 
   <script src="../assets/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/main.js"></script>
+  
 </body>
 </html>
