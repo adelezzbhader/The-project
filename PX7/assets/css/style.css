@@ -110,16 +110,24 @@ body{
   margin-top: 30px;
 }
 #true{
-  background-color: #b3ff99;
+  background-color: #4CAF50;
   text-align: center;
 }
 #false{
-  background-color: #ff9999;
+  background-color: #f44336; 
   text-align: center;
 }
 #color{
   background-color:#383838;
   color: #fff;
+}
+#total-presents{
+  background-color: #2196F3;
+  color: white;
+}
+#total-absences{
+  background-color: #9C27B0; 
+  color: white; 
 }
 
 
